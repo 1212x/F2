@@ -109,7 +109,7 @@ async def start_command(client: Client, message: Message):
         return
 
 
-@Bit.on_message(filters.command('Pifchannels') & filters.private)
+@Bot.on_message(filters.command('Pifchannels') & filters.private)
 async def PIFchannels(client, message: Message):
 
     keyboard = [
