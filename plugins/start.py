@@ -152,7 +152,7 @@ async def PIFchannels(client, message: Message):
     await message.delete()
 
 # Add the command handler to your existing Client instance
-app.add_handler(filters.command('pifchannel') & filters.private, PIFchannels)
+bot.add_handler(filters.command('pifchannel') & filters.private, PIFchannels)
 
 WAIT_MSG = """"<b>Processing ...</b>"""
 
