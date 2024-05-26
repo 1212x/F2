@@ -131,29 +131,26 @@ async def PIFchannels(client, message: Message):
     sent_message = await message.reply_text(
         text="""**__🙂 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍʏ ᴘᴀɴɪɴᴅɪᴀғɪʟᴍᴢ ᴄᴏᴍᴍᴜɴɪᴛʏ!! ᴄʜᴇᴀᴋ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs & ɢʀᴏᴜᴘs ʟɪsᴛ ʙᴇʟᴏᴡ!!__**
 
-**__      ʜᴇ'ʟʟᴏ .. ɪ ᴀᴍ ᴘᴀɴɪɴᴅɪᴀғɪʟᴍᴢ ᴀᴅᴍɪɴ 🤨__**
+            **__      ʜᴇ'ʟʟᴏ .. ɪ ᴀᴍ ᴘᴀɴɪɴᴅɪᴀғɪʟᴍᴢ ᴀᴅᴍɪɴ 🤨__**
 
-**__✨  ᴅᴇᴀʟs 𝟸𝟺/𝟽 :- 
-@KillerLootDeals __** 
+            **__✨  ᴅᴇᴀʟs 𝟸𝟺/𝟽 :- 
+            @KillerLootDeals __** 
 
-**__✨ ʀᴀʀᴇ ʜɪᴅᴅᴇɴ ᴀᴅᴜʟᴛ ᴍᴏᴠɪᴇs 𝟸.𝟶 
-@Telugu_Adults_Rare_Hidden_Movies __**
+            **__✨ ʀᴀʀᴇ ʜɪᴅᴅᴇɴ ᴀᴅᴜʟᴛ ᴍᴏᴠɪᴇs 𝟸.𝟶 
+            @Telugu_Adults_Rare_Hidden_Movies __**
 
-**__ᴛᴀʀɢᴇᴛ - ʀᴇᴀᴄʜɪɴɢ ᴜʀ sᴇʟғ 🎯__**
+            **__ᴛᴀʀɢᴇᴛ - ʀᴇᴀᴄʜɪɴɢ ᴜʀ sᴇʟғ 🎯__**
 
-**__ғᴏʀ ᴀɴʏ ǫᴜᴇʀɪᴇs - @PIFAdminBot __**
+            **__ғᴏʀ ᴀɴʏ ǫᴜᴇʀɪᴇs - @PIFAdminBot __**
 
-**__ @PanindiaFilmZ 🔥**__""",
+            **__ @PanindiaFilmZ 🔥**__""",
         reply_markup=reply_markup
     )
 
     await asyncio.sleep(10)
     await sent_message.delete()
     await message.delete()
-
-# Add the command handler to your existing Client instance
-Bot.add_handler(filters.command('pifchannel') & filters.private, PIFchannels)
-
+    
 WAIT_MSG = """"<b>Processing ...</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
