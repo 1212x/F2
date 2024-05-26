@@ -113,6 +113,8 @@ async def start_command(client: Client, message: Message):
 @Bot.on_message(filters.command('Pifchannels') & filters.private)
 async def PIFchannels(client, message: Message):
     try:
+        logger.info(f"Received command /Pifchannels from {message.from_user.id}")
+
         keyboard = [
             [InlineKeyboardButton("🍁 ʜᴅ ᴛᴇʟᴜɢᴜ ᴍᴏᴠɪᴇs 🎖️", url="https://t.me/+wIa9vb3tRho3N2Q1")],
             [InlineKeyboardButton("🧞‍♀️ ʜɪɴᴅɪ - ᴍᴀʟᴀʏᴀʟᴀᴍ 🧐", url="https://t.me/+97U9EyGMz_s2YzQ1"),
@@ -148,11 +150,15 @@ async def PIFchannels(client, message: Message):
             reply_markup=reply_markup
         )
 
+        logger.info(f"Sent message ID {sent_message.message_id} to {message.from_user.id}")
+
         await asyncio.sleep(10)
         await sent_message.delete()
         await message.delete()
+        logger.info(f"Deleted messages in chat with {message.from_user.id}")
     except Exception as e:
         logger.error(f"Error in PIFchannels command: {e}")
+        
 
 WAIT_MSG = """"<b>Processing ...</b>"""
 
