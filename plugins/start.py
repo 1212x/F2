@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                    InlineKeyboardButton("😊 PanindiaFilmZ", callback_data = "about"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
@@ -125,7 +125,7 @@ async def not_joined(client: Client, message: Message):
     [
         InlineKeyboardButton(
             "Jᴏɪɴ Cʜᴀɴɴᴇʟ 𝟷",
-            url="https://t.me/Pakkinte_Anty_Bitlu"
+            url="https://t.me/addlist/q6Rlhoyd9r80NTg1"
         ),
         InlineKeyboardButton(
             "Jᴏɪɴ Cʜᴀɴɴᴇʟ 𝟸",
